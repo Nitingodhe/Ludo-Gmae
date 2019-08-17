@@ -1,0 +1,279 @@
+
+#LudoGame{
+	position: relative;
+	left: 40%;
+}
+#Dice{
+	position: absolute;
+	left: 30%;
+}
+#Dice2{
+	position: absolute;
+	left: -270px;
+	top: 82%;
+}
+
+#Dice2 button{
+	border-radius: 8px;
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+
+}
+#Dice button{
+	border-radius: 8px;
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+
+}
+#Board{
+	background-color: rgb(0,191,255);
+	box-sizing: border-box;
+	height:540px;
+	width: 540px;
+	margin-left: -150px;
+	padding: 20px;
+	border-radius: 20px;
+
+}
+#InnerBoard{
+	background-color: white;
+	height:500px;
+	width: 500px;
+	
+}
+#result{
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 200px;
+	height: 100px;
+	width: 100px;
+	box-sizing: border-box;
+	background-color: gray;
+	text-align: center;
+	font-size: 20px;
+	color:rgb(128,0,0);;
+}
+
+
+
+
+.Player{
+	box-sizing: border-box;
+	height: 200px;
+	width: 200px;
+	padding: 25px;
+}
+
+.Goti{
+	height: 150px;
+	width: 150px;
+	display: block;
+	
+}
+.Place{
+	
+	padding: 0px;
+	display: block;
+	border-style: solid;
+	border-width: 1.6px;
+	position: static;
+	 box-sizing: border-box;
+}
+
+#Place1{
+	
+	height: 200px;
+	width: 100px;
+	margin-left: 200px;
+	margin-top: 0px;
+	
+}
+
+#Place4{
+	
+	height: 100px;
+	width: 200px;
+	margin-left: 0px;
+	margin-top: 0px;
+	
+	
+}
+#Place2{
+	
+	height: 100px;
+	width: 200px;
+	margin-left:300px;
+	margin-top: -100px;
+}
+
+
+#Place3{
+	
+	height: 200px;
+	width: 100px;
+	margin-left: 200px;
+	margin-top: 0px;
+	
+	
+}
+
+
+ul{
+	display: block;
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+	border-collapse: collapse;
+	position: absolute;
+	
+
+}
+ul li{
+	
+	float: left;
+	height: 31px;
+	width: 31px;
+	border-style:solid;
+	border-width: 1px;
+	border-collapse: collapse;
+	display: block;
+}
+
+#G1,#G2,#G3,#G4,#G5,#P40{
+	background-color:rgb(50,205,50);
+}
+
+#GreenPlayer{
+	background-color: rgb(0,128,0);
+	display: block;
+	
+}
+
+#Green{
+	background-color: rgb(50,205,50);
+	display: block;
+	float: left;
+	}
+
+#Yellow{
+	background-color: rgb(240,240,0);
+	display: block;
+	float:right;
+
+
+}
+#Y1,#Y2,#Y3,#Y4,#Y5,#P1{
+	background-color:rgb(240,240,0); 
+}
+
+#YellowPlayer{
+	background-color: rgb(190,190,0);
+	display: block;
+	
+}
+#R1,#R2,#R3,#R4,#R5,#P27{
+	background-color:rgb(255,69,0);
+}
+#Red{
+	background-color:rgb(255,69,0);
+	display: block;
+	float: left;
+	margin-top: 100px;
+}
+#RedPlayer{
+	background-color: rgb(128,0,0);
+	display: block;
+	
+}
+#B1,#B2,#B3,#B4,#B5,#P14{
+	background-color:rgb(30,30,255);
+}
+
+#Blue{
+	background-color: rgb(30,30,255);
+	display: block;
+	float: right;
+	margin-top: 100px;
+}
+#BluePlayer{
+	background-color: rgb(0,0,128);
+	display: block;
+	
+}
+.Circle{
+	width: 35px;
+	 height: 35px; 
+	 border-radius: 50%; 
+	 background-color: white;
+	  position: absolute;
+}
+
+img{
+	height: 25px;
+	width: 25px;
+	margin-left: 5px;
+	margin-top: 5px;
+	pointer-events: none;
+}
+
+.enable{
+	pointer-events:auto;
+	cursor: pointer;
+}
+.disable{
+	pointer-events:none;
+	
+}
+
+
+
+#C1,#C5,#C9,#C13{
+	margin-top: 30px;
+	 margin-left: 30px;
+	
+}
+#C2,#C6,#C10,#C14{
+
+	margin-top: 30px;
+	 margin-left: 85px;
+	
+}
+#C3,#C7,#C11,#C15{
+
+	margin-top: 90px;
+	 margin-left: 30px;
+	
+}
+#C4,#C8,#C12,#C16{
+
+	margin-top: 90px;
+	 margin-left: 85px;
+	
+}
+.disable
+{
+	pointer-events:none;
+}
