@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>LUDO GAME </title> 
+	<link href="css.css" rel="stylesheet" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+<div id="LudoGame">
+	<h1> LUDO GAME </h1>
+<div id="Dice" class="">
+	<button onclick="RandomNo()" id="DiceY">Roll the Dice</button>
+</div>
+<div id="Dice2" class="">
+	<button onclick="RandomNo2()" id="DiceY2">Roll the Dice</button>
+</div>	
+	<div id="Board">
+	<div id="InnerBoard">
+		<div id="result"></div>
+
+		<div id="Green" class="Player">
+			<div id="GreenPlayer" class="Goti">  <div id="C1" class="Circle"></div><div id="C2" class="Circle"></div><div id="C3" class="Circle"></div><div id="C4" class="Circle"></div></div>
+		</div>
+
+		<div id="Yellow" class="Player">
+			<div id="YellowPlayer" class="Goti"><div id="C5" class="Circle"><img src="goti.jpg " id="Goti5" class="GotiIn"></div><div id="C6" class="Circle"><img src="goti.jpg " id="Goti6" class="GotiIn"></div><div id="C7" class="Circle"><img src="goti.jpg " id="Goti7" class="GotiIn"></div><div id="C8" class="Circle"><img src="goti.jpg " id="Goti8" class="GotiIn"></div></div>
+		</div>
+
+		<div id="Red" class="Player">
+			<div id="RedPlayer" class="Goti"><div id="C9" class="Circle"><img src="goti.jpg " id="Goti1" class="GotiIn"></div><div id="C10" class="Circle"><img src="goti.jpg " id="Goti2" class="GotiIn"></div><div id="C11" class="Circle"><img src="goti.jpg " id="Goti3" class="GotiIn"></div><div id="C12" class="Circle"><img src="goti.jpg " id="Goti4" class="GotiIn"></div></div>
+		</div>
+		<div id="Blue" class="Player">
+			<div id="BluePlayer" class="Goti"><div id="C13" class="Circle"></div><div id="C14" class="Circle"></div><div id="C15" class="Circle"></div><div id="C16" class="Circle"></div></div>
+		</div>
+		<div id="Place1" class="Place">
+			 
+				 <div class="container"><ul style=" width:100px;">
+					<li  class="cell" id="P50" ></li><li  class="cell" id="P51" ></li><li  class="cell" id="P52" ></li>
+					<li  class="cell" id="P49" ></li><li  class="cell" id="Y1" ></li><li  class="cell" id="P1" ></li>
+					<li  class="cell" id="P48" ></li><li  class="cell" id="Y2" ></li><li  class="cell" id="P2" ></li>
+					<li  class="cell" id="P47" ></li><li  class="cell" id="Y3" ></li><li  class="cell" id="P3" ></li>
+					<li  class="cell" id="P46" ></li><li  class="cell" id="Y4" ></li><li  class="cell" id="P4" ></li>
+					<li  class="cell" id="P45" ></li><li  class="cell" id="Y5" ></li><li  class="cell" id="P5" ></li>
+					
+					
+
+					
+				</ul>
+				</div>
+
+
+
+		</div>
+		<div id="Place4" class="Place">
+			 <div class="container"><ul style=" width:200px;">
+					<li  class="cell" id="P39" ></li><li  class="cell" id="P40" ></li><li  class="cell" id="P41" ></li>
+					<li  class="cell" id="P42" ></li><li  class="cell" id="P43" ></li><li  class="cell" id="P44" ></li>
+
+					<li  class="cell" id="P38" ></li><li  class="cell" id="G1" ></li><li  class="cell" id="G2" ></li>
+					<li  class="cell" id="G3" ></li><li  class="cell" id="G4" ></li><li  class="cell" id="G5" ></li>
+
+					<li  class="cell" id="P37" ></li><li  class="cell" id="P36" ></li><li  class="cell" id="P35" ></li>
+					<li  class="cell" id="P34" ></li><li  class="cell" id="P33" ></li><li  class="cell" id="P32" ></li>
+					
+					
+
+					
+				</ul>
+				</div>
+		</div>
+		<div id="Place2" class="Place">
+			 <div class="container"><ul style=" width:200px;">
+					<li  class="cell" id="P6" ></li><li  class="cell" id="P7" ></li><li  class="cell" id="P8" ></li>
+					<li  class="cell" id="P9" ></li><li  class="cell" id="P10" ></li><li  class="cell" id="P11" ></li>
+
+					<li  class="cell" id="B5" ></li><li  class="cell" id="B4" ></li><li  class="cell" id="B3" ></li>
+					<li  class="cell" id="B2" ></li><li  class="cell" id="B1" ></li><li  class="cell" id="P12" ></li>
+
+					<li  class="cell" id="P18" ></li><li  class="cell" id="P17" ></li><li  class="cell" id="P16" ></li>
+					<li  class="cell" id="P15" ></li><li  class="cell" id="P14" ></li><li  class="cell" id="P13" ></li>
+					
+					
+
+					
+				</ul>
+				</div>
+		</div>
+		<div id="Place3" class="Place">
+			 <div class="container"><ul style=" width:100px;">
+					<li  class="cell" id="P31" ></li><li  class="cell" id="R5" ></li><li  class="cell" id="P19" ></li>
+					<li  class="cell" id="P30" ></li><li  class="cell" id="R4" ></li><li  class="cell" id="P20" ></li>
+					<li  class="cell" id="P29" ></li><li  class="cell" id="R3" ></li><li  class="cell" id="P21" ></li>
+					<li  class="cell" id="P28" ></li><li  class="cell" id="R2" ></li><li  class="cell" id="P22" ></li>
+					<li  class="cell" id="P27" ></li><li  class="cell" id="R1" ></li><li  class="cell" id="P23" ></li>
+					<li  class="cell" id="P26" ></li><li  class="cell" id="P25" ></li><li  class="cell" id="P24" ></li>
+					
+					
+
+					
+				</ul>
+				</div>
+		</div>
+
+	</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+
+
+</html>
